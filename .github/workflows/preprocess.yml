@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:  # Agar bisa dijalankan manual juga dari GitHub UI
+  workflow_dispatch:  
 
 jobs:
   preprocessing:
@@ -17,7 +17,7 @@ jobs:
       - name: 🐍 Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12.17'
+          python-version: '3.12'
 
       - name: 📦 Install dependencies
         run: |
