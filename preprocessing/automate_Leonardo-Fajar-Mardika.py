@@ -67,6 +67,7 @@ def main():
 
     df = load_data(input_path)
     df_clean = preprocess_data(df)
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
     save_data(df_clean, output_path)
 
 if __name__ == "__main__":
