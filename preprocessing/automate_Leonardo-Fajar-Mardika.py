@@ -63,7 +63,7 @@ def save_data(df, output_path):
 
 def main():
     input_path = "./student_habits_performance_raw.csv"
-    output_path = "./preprocessing/student_habits_performance_preprocessed.csv.csv"
+    output_path = "./preprocessing/student_habits_performance_preprocessed.csv"
 
     df = load_data(input_path)
     df_clean = preprocess_data(df)
